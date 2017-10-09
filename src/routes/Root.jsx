@@ -16,7 +16,7 @@ export default class Root extends Component {
             <Router history={hashHistory}>
                 <Route path="/" component={Frame}>
                     {/* 添加onEnter={checkLogin}属性, 可进行登录校验 */}
-                    <IndexRoute component={Index} />
+                    <IndexRoute component={Pagination} />
                     <Route path="*" component={NotFound}/>
                     <Route path="/systemError" component={SystemError}/>
                 </Route>  
