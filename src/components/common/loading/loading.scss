@@ -1,0 +1,31 @@
+.loading {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    outline: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+.otherhide{
+    display:none
+}
+
+.loading:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+}
+
+.loading-dialog {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    max-width: 100%;
+    border-radius: 0;
+}

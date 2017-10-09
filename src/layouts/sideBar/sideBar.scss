@@ -1,0 +1,27 @@
+.sidebar {
+	@at-root {
+		&_root {
+			width: 100%;
+
+			ul {
+				width: 100%;
+
+				li {
+					padding: 0 10px 0 24px;
+					height: 42px;
+					line-height: 42px;
+
+					a {
+						display: block;
+						color: #000;
+						font-size: 14px;
+
+						&:hover {
+							color: #108ee9; 
+						}
+					}
+				}
+			}
+		}
+	}
+}

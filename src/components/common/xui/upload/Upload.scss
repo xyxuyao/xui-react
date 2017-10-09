@@ -1,0 +1,49 @@
+// Created By yxc
+
+.upload {
+    @at-root {
+        &_root {
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        &_iframe {
+            display: none;
+        }
+
+        &_form {
+            float: left;
+            height: 40px;
+        }
+
+        &_label {
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            background: #0d7aa4;
+            .iconfont{
+                display: inline-block;
+                padding-right: 5px;
+            }
+        }
+
+        &_input {
+            display: none;
+        }
+
+        &_submit {
+            width: 100px;
+            height: 40px;
+        }
+        &_name {
+            font-weight: 600;
+        }
+
+    }
+}

@@ -1,0 +1,50 @@
+.bbdRadio {
+    @at-root {
+
+        #{&}_root {
+            position: relative;
+            margin-right: 10px;
+            white-space: nowrap;
+            cursor: pointer;
+            outline: none;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+
+        #{&}_input{
+            margin-right: 5px;
+            position: relative;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid #CCC;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        #{&}_checked #{&}_input{
+            border: 1px solid #0D7199;
+            &:after{
+                content: '';
+                display: block;
+                margin: auto;
+                position: absolute;
+                top: 4px;
+                left: 0;
+                right: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #0D7199;
+            }
+        }
+
+        #{&}_text{
+            color: #fff;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+    }
+}

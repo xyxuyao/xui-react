@@ -1,0 +1,77 @@
+
+#bbdTip_root{
+  position: fixed;
+  z-index: 999999;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  .bbdTip_box{
+    margin-top: 10px;
+    height: 38px;
+    line-height: 38px;
+    transition: .5s;
+    p{
+      display: inline-block;
+      padding: 0 15px;
+      max-width: 90%;
+      color: #333;
+      border-radius: 3px;
+      background: #fff;
+      box-shadow: 0 0 8px #333;
+    }
+    .iconfont{
+      margin-right: 5px;
+    }
+    .icon-jinggao{
+      color: #FF9B00;
+      font-size: 20px;
+    }
+    .icon-wancheng{
+      color: #5CB85C;
+      font-size: 16px;
+    }
+    .icon-icon-yxj-error{
+      color: #FF3535;
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}

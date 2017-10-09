@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/*按钮*/
+
+.pagination .btn{
+    padding:10px 10px;
+    border-radius: 4px;
+    font-size:14px;
+    background-color:#1b3c59;
+    border:solid 1px #8094a4;
+}
+
+/*分页 pagilist*/
+
+.pagination{
+    height: 70px;
+    margin-top: 20px;
+}
+.pagination .first,.pagination .last,.pagination .pre,.pagination .next{
+    float:left; 
+    margin:0px 10px;
+    color:#8899aa; 
+    border:solid 1px #8094a4;
+    }
+.pagination a.disabled{
+    color: #8899aa;
+    background-color: #1b3c59;
+    cursor: not-allowed;
+}
+.pagination .pagination_content {
+    float:left; 
+    width: 246px; 
+    height: 42px; 
+    position: relative; 
+    overflow: hidden;
+}
+.pagination .pagination_content .pagination_list{ 
+    position: absolute;
+    left: 0px; 
+    top: 0px;
+}
+.pagination .pagination_list li{
+    float:left; 
+    min-width:32px;
+    padding: 10px 5px;
+    margin:0px 10px;
+    text-align: center;
+    color:#8899aa; 
+}
+.pagination .pagination_list li.curpage { 
+    background-color:#2fb5ff; 
+    border:solid 1px #2fb5ff;
+}
+.pagination .pagination_list li.curpage a { 
+    background-color:#2fb5ff; 
+    color:#fff;
+}
+.pagination .pagination_list li a { 
+    display:block; 
+    color: #8899aa; 
+}
+.pagination .pagination_list li:hover{
+    border:solid 1px #2fb5ff;
+    background-color:#2fb5ff; 
+}
+.pagination .pagination_list li:hover a{
+    color:#fff;
+}
+.pagination .pagination_total {
+    float:left; 
+    margin: 2px 10px; 
+    font-size: 14px;
+    color: #8899aa;
+}
+.pagination .pagination_total div,.pagination .pagination_total a{ 
+    float:left;
+}
+.pagination .pagination_total a.pagination_go{
+    margin:0px 10px; 
+    padding:10px 10px;
+    background-color:#0d7199; 
+    color:#fff; 
+    border:none; 
+}
+.pagination .pagination_total input, .pagination .pagination_total select{
+    height: 26px; 
+    border: 1px solid #ddd;
+}
+.pagination .pagination_total input {
+    width: 40px;
+    height: 34px;
+    padding-left:3px;
+    margin: 0 5px;
+    border-radius: 4px;
+    background-color: #1b3c59;
+    border:solid 1px #8094a4;
+    color: #fff;
+}
+.pagination .pagination_total input:focus {
+    outline: 0;
+    box-shadow: 0 0 5px 0px #0d76a2;
+}
+.pagination .pagination_total select {
+    width: 50px;
+}
+.pagination .pagination_number{
+    font-size: 14px;
+    line-height: 36px;
+    margin-right: 5px;
+    color: #8899aa;
+}
+.pagination .pagination_goPage{
+    position: relative;
+}
+.pagination  .pagination_numTip{
+    position: absolute;
+    left: 12px;
+    top: 38px;
+    color: #e14340;
+    font-size: 12px;
+}

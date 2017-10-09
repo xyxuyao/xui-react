@@ -1,0 +1,90 @@
+// Created By xuyao
+
+.bbdMenu {
+    @at-root {
+
+        #{&} {
+            position: relative;
+            width: 100%;
+        }
+       #{&}_submenu{
+            margin: 14px 0;
+       }
+
+        #{&}_submenuTitle{
+            display: block;
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 24px;
+            font-size: 16px;
+            color: #8899aa;
+            border-right: 2px solid transparent;
+        }
+        #{&}_submenu_sub{
+            padding-left: 40px;
+        }
+        #{&}_submenu-selected > #{&}_submenuTitle{
+             color: #00b7ee; 
+        }
+
+        #{&}_submenuTitle .iconleft{
+            padding-right: 16px;
+            color: #09729a;
+        }
+
+        #{&}_submenuTitle .iconright{
+            position: absolute;
+            right: 24px;
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        #{&}_sub{
+            display: none;
+        }
+        #{&}_sub-show{
+            display: block;
+            background-color: #103a57;
+        }
+
+        #{&}_item a{
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 50px;
+        }
+
+        #{&}_item a.active{
+            background-color: #0d5375;
+            color: #fff;
+        }
+        #{&}_submenu a.active{
+            background-color: #0d5375;
+            color: #00b7ee;
+            border-right: 2px solid #00b7ee;
+        }
+        #{&}_submenu-selected{
+            .iconleft{
+                color: #00b7ee;
+            }
+            a.active{
+                border-right: 2px solid #00b7ee;
+            }
+        } 
+        // #{&}_item-selected a{
+        //     display: block;
+        //     width: 100%;
+        //     height: 40px;
+        //     line-height: 40px;
+        //     text-align: center;
+        //     background-color: #0d5375;
+        //     color: #fff;
+        //     font-size: 14px;
+        // }
+
+
+    }
+}

@@ -1,0 +1,32 @@
+// Created By xuyao
+
+.bbdBtn {
+    @at-root {
+
+        #{&}_root {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background-color: #00b7ee;
+            border:0;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #{&}_root:hover{
+            background-color: #2ec9f2;
+        }
+         #{&}_root i{
+            display: inline-block;
+            padding-right: 5px;
+         }
+
+         #{&}_text {
+            display: block;
+            text-align: center;
+        }
+    }
+}
