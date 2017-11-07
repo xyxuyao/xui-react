@@ -43,7 +43,6 @@
         "no-empty-pattern": "error",
         "no-redeclare": "error",
         "no-delete-var": "error",
-        "no-lonely-if": "error",
         "no-self-assign": "error",
         "no-multiple-empty-lines": ["warn", {"max": 1}],
         "space-infix-ops": "error",

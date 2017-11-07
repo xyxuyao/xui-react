@@ -210,7 +210,7 @@ class Pagination extends Component {
     }
     pageListStyle(nowNum) { // 根据条件设置设置按钮样式
         var totalPage = this.state.totalPage;
-        let classStatus = {preStatusClass: '', firstStatusClass: '', nextStatusClass: '', lastStatusClass: ''}
+        let classStatus = {preStatusClass: '', firstStatusClass: '', nextStatusClass: '', lastStatusClass: ''};
         if (nowNum === 1) {
             Object.assign(classStatus, {
                 preStatusClass: 'disabled',
